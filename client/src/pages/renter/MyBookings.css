@@ -1,0 +1,81 @@
+.my-bookings-container {
+  min-height: 100vh;
+  padding: 40px;
+  background: linear-gradient(
+    135deg,
+    #0f172a,
+    #1e3a8a,
+    #2563eb
+  );
+}
+
+.my-bookings-title {
+  text-align: center;
+  color: white;
+  font-size: 40px;
+  margin-bottom: 40px;
+}
+
+.bookings-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 25px;
+}
+
+.booking-card {
+  background: rgba(255,255,255,0.15);
+  backdrop-filter: blur(10px);
+  padding: 25px;
+  border-radius: 20px;
+  color: white;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+}
+
+.booking-card h3 {
+  color: #ffd54f;
+  margin-bottom: 15px;
+}
+
+.booking-card p {
+  margin: 10px 0;
+  font-size: 16px;
+}
+
+.status-pending {
+  color: orange;
+  font-weight: bold;
+}
+
+.status-accepted {
+  color: lime;
+  font-weight: bold;
+}
+
+.status-rejected {
+  color: red;
+  font-weight: bold;
+}
+
+.no-bookings {
+  text-align: center;
+  color: white;
+  font-size: 22px;
+  margin-top: 100px;
+}
+.accepted-msg{
+  color: #00ff88;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.rejected-msg{
+  color: #ff5c5c;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.pending-msg{
+  color: #ffd166;
+  font-weight: bold;
+  margin-top: 10px;
+}

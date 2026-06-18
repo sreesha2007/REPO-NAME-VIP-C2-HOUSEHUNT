@@ -1,0 +1,93 @@
+.owner-dashboard {
+  min-height: 100vh;
+  padding: 40px;
+  background: linear-gradient(
+    135deg,
+    #0f172a,
+    #1e3a8a,
+    #2563eb
+  );
+}
+
+.owner-dashboard h1 {
+  text-align: center;
+  color: white;
+  font-size: 42px;
+  margin-bottom: 50px;
+  font-weight: 700;
+}
+
+.dashboard-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+  gap: 30px;
+}
+
+.card {
+  background: rgba(255,255,255,0.15);
+  backdrop-filter: blur(15px);
+  border: 1px solid rgba(255,255,255,0.2);
+  border-radius: 25px;
+  padding: 30px;
+  text-align: center;
+  transition: 0.4s;
+  box-shadow: 0 8px 30px rgba(0,0,0,0.2);
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 40px rgba(0,0,0,0.35);
+}
+
+.card h2 {
+  color: white;
+  margin-bottom: 15px;
+}
+
+.card p {
+  color: rgba(255,255,255,0.85);
+  margin-bottom: 20px;
+}
+
+.card button {
+  background: white;
+  color: #2563eb;
+  border: none;
+  padding: 12px 22px;
+  border-radius: 30px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.card button:hover {
+  background: #dbeafe;
+  transform: scale(1.05);
+}
+.welcome-text {
+  text-align: center;
+  color: rgba(255,255,255,0.8);
+  margin-top: -25px;
+  margin-bottom: 40px;
+  font-size: 18px;
+}
+.dashboard-header{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  margin-bottom:20px;
+}
+
+.logout-btn{
+  background:#ff4d4d;
+  color:white;
+  border:none;
+  padding:10px 20px;
+  border-radius:8px;
+  cursor:pointer;
+  font-weight:600;
+}
+
+.logout-btn:hover{
+  background:#e60000;
+}
